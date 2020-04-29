@@ -1,0 +1,147 @@
+@@include('template/head.html', {
+  "pagetitle": "Страница товара",
+  "bodyclass": ""
+})
+
+<div class="page-header--shift">
+@@include('template/page-header.html',{
+  "page_header_index": "false",
+  "page_header_logo_white": "false"
+})
+</div>
+
+<main class="page-card">
+  <div class="intro-block intro-block--small">
+    <h2 class="page-main__header page-main__header--other-pages marquee active" data-duration='5000' data-gap='30' data-duplicated='true'>футболки футболки футболки</h2>
+    <form class="page-main__search-input-container">
+      <input class="page-main__search-input" type="text" placeholder="Я ищу" autofocus>
+      <button class="page-main__search-input-close icon-close"></button>
+    </form>
+    <a class="page-card__link-back" href="#">
+      <span>
+        <i class="icon-arrow"></i> <i class="icon-arrow"></i>
+      </span>
+      назад
+    </a>
+  </div>
+
+  <div class="page-card__container">
+    <div class="page-card__item">
+      <div class="page-card__slider-container">
+        <div class="page-card__slider-preview-container">
+          <div class="page-card__slider-preview">
+            <div class="page-card__preview-slide">
+              <img class="page-card__preview-img" src="./img/card-img-01.png" alt="card-img">
+            </div>
+            <div class="page-card__preview-slide">
+              <img class="page-card__preview-img" src="./img/product-02.png" alt="card-img">
+            </div>
+            <div class="page-card__preview-slide">
+              <img class="page-card__preview-img" src="./img/product-03.png" alt="card-img">
+            </div>
+            <div class="page-card__preview-slide">
+              <img class="page-card__preview-img" src="./img/product-04.png" alt="card-img">
+            </div>
+          </div>
+        </div>
+        <div class="page-card__slider-main">
+          <div class="page-card__photo page-card__img-zoom">
+            <img class="page-card__img" src="./img/card-img-01-big.png" alt="card-img">
+            <span class="page-catalog__sale">%</span>
+          </div>
+          <div class="page-card__photo page-card__img-zoom">
+            <img class="page-card__img" src="./img/product-02.png" alt="card-img">
+          </div>
+          <div class="page-card__photo page-card__img-zoom">
+            <img class="page-card__img" src="./img/product-03.png" alt="card-img">
+          </div>
+          <div class="page-card__photo page-card__img-zoom">
+            <img class="page-card__img" src="./img/product-04.png" alt="card-img">
+          </div>
+          <div class="page-card__photo page-card__img-zoom">
+            <img class="page-card__img" src="./img/product-05.png" alt="card-img">
+          </div>
+          <div class="page-card__photo page-card__img-zoom">
+            <img class="page-card__img" src="./img/product-06.png" alt="card-img">
+          </div>
+          <div class="page-card__photo page-card__img-zoom">
+            <img class="page-card__img" src="./img/product-07.png" alt="card-img">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="page-card__content">
+        <span class="page-card__serial">AK4675</span>
+        <h2 class="page-card__header">футболка just punk it к новому году</h2>
+        <span class="page-card__text">размер</span>
+        <div class="page-card__size-container">
+          <div>
+            <input class="page-card__size-input visually-hidden" id="size-s" type="radio" name="size-radio" checked>
+            <label class="page-card__size-label" for="size-s">s</label>
+          </div>
+          <div>
+            <input class="page-card__size-input visually-hidden" id="size-m" type="radio" name="size-radio" disabled>
+            <label class="page-card__size-label disabled" for="size-m">m</label>
+          </div>
+          <div>
+            <input class="page-card__size-input visually-hidden" id="size-l" type="radio" name="size-radio">
+            <label class="page-card__size-label" for="size-l">l</label>
+          </div>
+          <div>
+            <input class="page-card__size-input visually-hidden" id="size-xl" type="radio" name="size-radio">
+            <label class="page-card__size-label" for="size-xl">xl</label>
+          </div>
+        </div>
+        <span class="page-card__text">Цвет</span>
+        <div class="page-card__color-container">
+          <div>
+            <input class="page-card__color-input visually-hidden" id="color-black" type="radio" name="color-radio" checked>
+            <label class="page-card__color-label" for="color-black"></label>
+          </div>
+          <div>
+            <input class="page-card__color-input visually-hidden" id="color-pink" type="radio" name="color-radio">
+            <label class="page-card__color-label pink" for="color-pink"></label>
+          </div>
+          <div>
+            <input class="page-card__color-input visually-hidden" id="color-yellow" type="radio" name="color-radio" disabled>
+            <label class="page-card__color-label yellow disabled" for="color-yellow"></label>
+          </div>
+          <div>
+            <input class="page-card__color-input visually-hidden" id="color-blue" type="radio" name="color-radio">
+            <label class="page-card__color-label blue" for="color-blue"></label>
+          </div>
+        </div>
+        <span class="page-card__text">Количество</span>
+<!--          <button class="page-card__amount-btn">-</button>-->
+<!--          <input class="page-card__amount-number" type="text" placeholder="1">-->
+<!--          <button class="page-card__amount-btn active">+</button>-->
+        <div class="page-card__amount">
+          <a href="javascript:;" data-count-button class="page-card__amount-btn quant-button minus disabled">-</a>
+          <input type="text" inputmode="decimal" pattern="[0-9]*" min="1" max="99" value="1" class="page-card__amount-number text-input num-input only-digits" readonly>
+          <a href="javascript:;" data-count-button class="page-card__amount-btn quant-button plus">+</a>
+        </div>
+        <span class="page-card__price">900 грн</span>
+        <span class="page-card__price-crossed">1000 грн</span>
+        <button class="page-card__buy-btn">кинуть в корзину</button>
+        <span class="page-card__text">Состав</span>
+        <span class="page-card__text-gray">Хлопок - 90%, Полиэстер - 10%</span>
+        <span class="page-card__text">Описание</span>
+        <span class="page-card__text-gray">Отправка только по предзаказу через 2 недели</span>
+      </div>
+    </div>
+  </div>
+</main>
+
+@@include('template/page-footer.html', {
+"footer_index": "false"
+})
+
+@@include('template/popups.html')
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/plugins.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+</html>

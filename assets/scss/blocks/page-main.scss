@@ -1,0 +1,193 @@
+.page-main {
+
+  &__container {
+    padding-left: 37px;
+    padding-right: 37px;
+  }
+
+  &__header-container {
+    margin: 30px 0;
+    overflow: hidden;
+  }
+
+  &__header {
+    position: relative;
+    font-family: Russo One, sans-serif;
+    font-weight: normal;
+    font-size: 90px;
+    line-height: 90px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: #ffffff;
+    text-align: left;
+    text-shadow:  #000 1px 0px, #000 1px 1px, #000 0px 1px, #000 -1px 1px, #000 -1px 0px, #000 -1px -1px, #000 0px -1px, #000 1px -1px;
+    overflow: hidden;
+
+    &--other-pages {
+      position: relative;
+      z-index: 1;
+      margin-top: -1px;
+      margin-bottom: 0;
+      padding-top: 20px;
+      line-height: 90px;
+      color: $red;
+      text-shadow:  #fff 1px 0px, #fff 1px 1px, #fff 0px 1px, #fff -1px 1px, #fff -1px 0px, #fff -1px -1px, #fff 0px -1px, #fff 1px -1px;
+    }
+  }
+
+  &__search-input-container {
+    position: relative;
+    display: none;
+    padding: 30px 36px 30px 36px;
+
+    &.active {
+      display: block;
+    }
+
+    & .icon-close {
+      position: absolute;
+      top: 50%;
+      right: 43px;
+      z-index: 6;
+      font-size: 30px;
+      color: #ffffff;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__search-input {
+    position: relative;
+    z-index: 5;
+    display: block;
+    width: 100%;
+    padding-right: 125px;
+    font-family: Russo One, sans-serif;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    background-color: transparent;
+    outline: none;
+    box-sizing: border-box;
+
+    &::-webkit-input-placeholder {
+      font-weight: normal;
+      font-size: 60px;
+      line-height: 60px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.27);
+    }
+
+    &::-moz-placeholder {
+      font-weight: normal;
+      font-size: 60px;
+      line-height: 60px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.27);
+    }
+
+    &::-ms-input-placeholder {
+      font-weight: normal;
+      font-size: 60px;
+      line-height: 60px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.27);
+    }
+  }
+
+  &__search-input-close {
+    border: none;
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 1240px) {
+  .page-main {
+    &__header {
+      font-size: 120px;
+      line-height: 130px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .page-main {
+    &__search-input {
+      padding-right: 35px;
+      font-size: 30px;
+      line-height: 34px;
+
+      &::-webkit-input-placeholder {
+        font-size: 30px;
+        line-height: 35px;
+      }
+
+      &::-moz-placeholder {
+        font-size: 30px;
+        line-height: 35px;
+      }
+
+      &::-ms-input-placeholder {
+        font-size: 30px;
+        line-height: 35px;
+      }
+    }
+
+    &__search-input-container .icon-close {
+      right: 32px;
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .page-main {
+    &__container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    &__search-input-container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    &__header {
+      font-size: 70px;
+      line-height: 80px;
+    }
+
+    &__search-input {
+      height: 34px;
+      padding-right: 25px;
+      font-size: 20px;
+      line-height: 25px;
+
+      &::-webkit-input-placeholder {
+        font-size: 20px;
+        line-height: 25px;
+      }
+
+      &::-moz-placeholder {
+        font-size: 20px;
+        line-height: 25px;
+      }
+
+      &::-ms-input-placeholder {
+        font-size: 20px;
+        line-height: 25px;
+      }
+    }
+
+    &__search-input-container .icon-close {
+      right: 15px;
+      font-size: 15px;
+    }
+  }
+}

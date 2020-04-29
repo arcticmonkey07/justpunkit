@@ -1,0 +1,357 @@
+.page-checkout {
+  &__container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    padding: 40px 36px 95px 36px;
+  }
+
+  &__content {
+    width: 660px;
+    margin-right: 50px;
+  }
+
+  &__header {
+    margin: 0 0 35px 0;
+    font-family: Russo One, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  &__form-header {
+    margin: 0 0 20px 0;
+    font-family: Russo One, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  &__form-blocks-container {
+    margin-bottom: 50px;
+  }
+
+  &__form-block {
+    display: flex;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__input-wrapper {
+    position: relative;
+    width: 50%;
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    & .error {
+      position: absolute;
+      bottom: -14px;
+      font-size: 12px;
+      color: $red;
+    }
+
+    &.width-25 {
+      width: 25%;
+    }
+
+    &.width-100 {
+      width: 100%;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    height: 48px;
+    padding: 10px 24px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.035em;
+    text-transform: lowercase;
+    color: $black;
+    border: 1px solid #5E5E5E;
+    box-sizing: border-box;
+    outline: none;
+    overflow: initial;
+
+    &:focus ~ .page-checkout__label,
+    &.not-empty ~ .page-checkout__label {
+      top: -3%;
+      left: 13px;
+      padding: 0 10px;
+      font-size: 14px;
+      background-color: #fff;
+    }
+
+    &.is-invalid {
+      border-color: $red;
+    }
+
+    &.is-invalid ~ .page-checkout__label {
+      color: $red;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    top: 50%;
+    left: 24px;
+    width: max-content;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.035em;
+    text-transform: lowercase;
+    color: $black;
+    transform: translateY(-50%);
+    transition: all 0.15s ease-in-out;
+    pointer-events: none;
+  }
+
+  &__shipping {
+    margin-bottom: 29px;
+  }
+
+  &__btn-country {
+    height: 48px;
+    margin: 0 19px 0 0;
+    padding: 0 31px;
+    font-family: Russo One, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.035em;
+    text-transform: lowercase;
+    color: $black;
+    background: #EBEBEB;
+    border: none;
+
+    &.active {
+      color: #ffffff;
+      background: #F9736E;
+    }
+  }
+
+  &__checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 21px;
+  }
+
+  &__checkbox-indicator {
+    position: relative;
+    display: block;
+    width: 14px;
+    height: 14px;
+    margin-right: 17px;
+    border: 1px solid #545454;
+    box-sizing: border-box;
+    transition: .3s;
+  }
+
+  &__checkbox:checked + .page-checkout__checkbox-indicator {
+    border: 1px solid $red;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 8px;
+      height: 8px;
+      background: $red;
+      transition: .3s;
+    }
+  }
+
+  &__checkbox-label {
+    margin: 0;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: $black;
+  }
+
+  &__text {
+    margin: 0 0 34px 0;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  &__pay {
+    display: flex;
+    margin-bottom: 54px;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__pay-item {
+    margin-right: 36px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &__pay-link {
+    display: block;
+    text-decoration: none;
+    transition: .3s;
+
+    &.visa {
+      width: 77px;
+      height: 34px;
+      background-image: url(../img/visa.svg);
+    }
+
+    &.master {
+      width: 45px;
+      height: 35px;
+      background-image: url(../img/mastercard.svg);
+    }
+
+    &.apple {
+      width: 83px;
+      height: 34px;
+      background-image: url(../img/apple-pay.svg);
+    }
+  }
+
+  &__sidebar {
+    width: 25%;
+    margin-left: auto;
+    padding-top: 69px;
+  }
+
+  &__ukraine {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &__other {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+
+    & .page-checkout__checkbox-container {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__input-new-post {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &__input-courier {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .page-checkout {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__content {
+      margin-right: 0;
+    }
+
+    &__sidebar {
+      width: 320px;
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 730px) {
+  .page-checkout {
+    &__content {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .page-checkout {
+    &__form-block {
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+
+    &__input-wrapper {
+      width: 100%!important;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .page-checkout {
+    &__container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    &__label {
+      width: initial;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .page-checkout {
+    .page-cart__btn-submit {
+      &.width {
+        width: 100%;
+      }
+    }
+
+    &__sidebar {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .page-checkout {
+
+    &__shipping {
+      display: flex;
+    }
+
+    &__btn-country {
+      width: 50%;
+      margin-right: 20px;
+      padding: 0 15px;
+      box-sizing: border-box;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}

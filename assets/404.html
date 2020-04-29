@@ -1,0 +1,45 @@
+@@include('template/head.html', {
+"pagetitle": "Ошибка 404",
+"bodyclass": ""
+})
+
+<div class="page-header--shift page-header--404">
+  @@include('template/page-header.html',{
+  "page_header_index": "false",
+  "page_header_logo_white": "false"
+  })
+</div>
+
+<main class="page-404">
+  <div class="intro-block intro-block--small">
+    <h2 class="page-main__header page-main__header--other-pages marquee active" data-duration='5000' data-gap='30' data-duplicated='true'>ерор404 ерор404 ерор404 ерор404</h2>
+    <form class="page-main__search-input-container">
+      <input class="page-main__search-input" type="text" placeholder="Я ищу" autofocus>
+      <button class="page-main__search-input-close icon-close"></button>
+    </form>
+  </div>
+
+  <div class="page-404__content">
+    <div class="page-404__block">
+      <img class="page-404__face" src="./img/anguished-face.svg" alt="face">
+      <b class="page-404__header">Упс!</b>
+      <p class="page-404__text">Что-то сломалось. Попробуй вернуться на главную и поискать ещё раз</p>
+      <button class="page-404__btn-to-main">на главную</button>
+    </div>
+  </div>
+</main>
+
+<div class="page-footer--404">
+  @@include('template/page-footer.html', {
+  "footer_index": "false"
+  })
+</div>
+
+@@include('template/popups.html')
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/plugins.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+</html>

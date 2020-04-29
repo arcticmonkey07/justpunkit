@@ -1,0 +1,67 @@
+.popup-in-cart {
+
+  &.active {
+    display: block;
+  }
+
+  & .inner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__smile {
+    margin-bottom: 27px;
+  }
+
+  &__header {
+    margin: 0 0 23px 0;
+    font-family: Russo One, sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 47px;
+    text-align: center;
+  }
+
+  &__button {
+    width: 153px;
+    height: 48px;
+    margin-bottom: 20px;
+    font-family: Russo One, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.035em;
+    text-transform: lowercase;
+    color: #FFFFFF;
+    background: #177FFF;
+    border: none;
+    transition: .3s;
+
+    &:hover {
+      box-shadow: 0 0 20px 8px rgba(255, 191, 255, 0.65);
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 47px;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    transition: .3s;
+
+    span {
+      display: flex;
+      margin-left: 10px;
+    }
+
+    &:hover {
+      color: $yellow;
+      text-decoration: none;
+    }
+  }
+}

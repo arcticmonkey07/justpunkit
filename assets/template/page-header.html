@@ -1,0 +1,57 @@
+@@if(page_header_index == "true") {
+<header class="page-header page-header--index">
+}
+@@if(page_header_index == "false") {
+<header class="page-header">
+}
+  <div class="page-header__top">
+    <a class="page-header__logo" href="index.html">
+      @@if(page_header_logo_white == "true") {
+      <img class="page-header__logo" src="../img/logo.svg" alt="header-logo">
+      }
+      @@if(page_header_logo_white == "false") {
+      <img class="page-header__logo" src="../img/logo-header-yellow.svg" alt="header-logo">
+      }
+    </a>
+    <nav class="page-header__nav">
+      <ul class="page-header__list">
+        <li class="page-header__item">
+          <a class="page-header__link" href="#">магазин</a>
+        </li>
+        <li class="page-header__item">
+          <a class="page-header__link" href="#">обо мне</a>
+        </li>
+        <li class="page-header__item">
+          <a class="page-header__link" href="#">мои рекомендации</a>
+        </li>
+        <li class="page-header__item">
+          <a class="page-header__link" href="#">выпуски</a>
+        </li>
+        <li class="page-header__item">
+          <a class="page-header__link" href="#">контакты</a>
+        </li>
+        <li class="page-header__item">
+          <a class="page-header__link" href="#">доставка</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="page-header__right">
+      <a class="page-header__search" href="#">
+        <i class="icon-search"></i>
+      </a>
+      <a class="page-header__cart" href="cart.html">
+        <i class="icon-cart"></i>
+        <span class="page-header__cart-count">1</span>
+        <span class="page-header__cart-count-inner">1</span>
+      </a>
+    </div>
+    <button class="page-header__menu-toggle" type="button" title="Открыть меню">
+      <span></span>
+    </button>
+  </div>
+</header>
+
+
+
+
+

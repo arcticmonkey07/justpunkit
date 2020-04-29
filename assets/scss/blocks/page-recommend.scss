@@ -1,0 +1,193 @@
+.page-recommend {
+  &__container {
+    position: relative;
+    z-index: 1;
+    padding: 36px 36px 73px 36px;
+  }
+
+  &__top {
+    width: 720px;
+  }
+
+  &__suptext {
+    display: block;
+    margin-bottom: 18px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #BABABA;
+  }
+
+  &__header {
+    margin: 0 0 19px 0;
+    font-family: Russo One, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  &__text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: $black;
+  }
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    width: 1136px;
+    margin-top: 68px;
+  }
+
+  &__social {
+    .page-text__social-item {
+      margin-bottom: 20px;
+    }
+
+    .page-text__social-link {
+      width: 31px;
+      height: 31px;
+      background-color: $pink;
+
+      i {
+        font-size: 11px;
+      }
+
+      .instagram-text-page {
+        width: 14px;
+        height: 14px;
+        background-size: cover;
+      }
+    }
+  }
+
+  &__block {
+    margin-bottom: 50px;
+  }
+
+  &__content {
+    width: 720px;
+  }
+
+  &__block-header {
+    margin: 0 0 24px 0;
+    font-family: Russo One, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  &__block-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__block-item {
+    position: relative;
+    padding: 7px 0;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__block-number {
+    color: $pink;
+  }
+
+  &__btn-sale {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 166px;
+    height: 42px;
+    font-family: Russo One, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.035em;
+    text-transform: lowercase;
+    color: #FFFFFF;
+    background: #177FFF;
+    border: none;
+  }
+
+  &__text-bottom {
+    margin: 90px 0 0 0;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+
+@media (max-width: 1220px) {
+  .page-recommend {
+    &__wrapper {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .page-recommend {
+    &__btn-sale {
+      position: relative;
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .page-recommend {
+    &__top {
+      width: 100%;
+    }
+
+    &__content {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .page-recommend {
+  }
+}
+
+@media (max-width: 550px) {
+  .page-recommend {
+    &__header {
+      font-size: 46px;
+      line-height: 52px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .page-recommend {
+    &__header {
+      font-size: 35px;
+      line-height: 42px;
+    }
+  }
+}
+
+@media (max-width: px) {
+  .page-recommend {
+
+  }
+}
+
+@media (max-width: px) {
+  .page-recommend {
+
+  }
+}

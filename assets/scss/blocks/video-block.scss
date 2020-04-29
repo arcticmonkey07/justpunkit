@@ -1,0 +1,145 @@
+.video-block {
+
+  &__top-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 68px;
+  }
+
+  &__header {
+    margin: 0;
+    font-family: Russo One, sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+  }
+
+  &__link {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    transition: .3s;
+
+    span {
+      display: flex;
+      margin-left: 15px;
+    }
+
+    &:hover {
+      color: $blue;
+      text-decoration: none;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 127px;
+  }
+
+  &__item {
+    width: 255px;
+    margin: 0 10px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      display: block;
+    }
+  }
+
+  &__item-img-container {
+    margin-bottom: 14px;
+  }
+
+  &__item-img {
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+  }
+
+  &__item-header {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000;
+    text-decoration: none;
+    transition: .3s;
+  }
+
+  &__item-text {
+    display: block;
+    width: 255px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 19px;
+    color: #8A8A8A;
+  }
+}
+
+
+@media (max-width: 1170px) {
+  .video-block {
+    &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      margin: 0 0 20px 0;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .video-block {
+    &__link {
+      top: 60px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .video-block {
+    &__item {
+      width: 100%;
+    }
+
+    &__link {
+      top: 100px;
+    }
+  }
+}
+
+@media (max-width: 410px) {
+  .video-block {
+
+    &__link {
+      top: 150px;
+    }
+
+    &__header {
+      margin-bottom: 30px;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+@font-face {
+	font-family: "ico-font";
+	src: url('../fonts/icofont/ico-font.woff2') format('woff2'),
+		url('../fonts/icofont/ico-font.woff') format('woff'),
+		url('../fonts/icofont/ico-font.svg#ico-font') format('svg');
+}
+
+@mixin icon-styles {
+	font-family: "ico-font";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+
+	line-height: 1;
+
+	&:before {
+		display: block;
+		line-height: 1;
+	}
+}
+
+%icon {
+	@include icon-styles;
+}
+
+@function icon-char($filename) {
+	$char: "";
+
+	@if $filename == arrow {
+		$char: "\E001";
+	}
+	@if $filename == cart {
+		$char: "\E002";
+	}
+	@if $filename == close {
+		$char: "\E003";
+	}
+	@if $filename == fb-text-page {
+		$char: "\E004";
+	}
+	@if $filename == instagram-text-page {
+		$char: "\E005";
+	}
+	@if $filename == logo {
+		$char: "\E006";
+	}
+	@if $filename == search {
+		$char: "\E007";
+	}
+	@if $filename == youtube-text-page {
+		$char: "\E008";
+	}
+
+	@return $char;
+}
+
+@mixin icon($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %icon;
+		} @else {
+			@include icon-styles;
+		}
+		content: icon-char($filename);
+	}
+}
+
+.icon-arrow {
+	@include icon(arrow);
+}
+.icon-cart {
+	@include icon(cart);
+}
+.icon-close {
+	@include icon(close);
+}
+.icon-fb-text-page {
+	@include icon(fb-text-page);
+}
+.icon-instagram-text-page {
+	@include icon(instagram-text-page);
+}
+.icon-logo {
+	@include icon(logo);
+}
+.icon-search {
+	@include icon(search);
+}
+.icon-youtube-text-page {
+	@include icon(youtube-text-page);
+}

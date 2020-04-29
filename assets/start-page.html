@@ -1,0 +1,202 @@
+@@include('template/head.html', {
+	"pagetitle": "Главная страница",
+	"bodyclass": ""
+})
+
+@@include('template/page-header.html',{
+	"page_header_index": "true",
+	"page_header_logo_white": "true"
+})
+
+<main class="page-main">
+	<div class="intro-block--index">
+		<form class="page-main__search-input-container">
+			<input class="page-main__search-input" type="text" placeholder="Я ищу" autofocus>
+			<button class="page-main__search-input-close icon-close"></button>
+		</form>
+	</div>
+	<div class="first-block">
+		<div class="first-block__slider">
+			<div class="first-block__item-slide">
+				<img src="./img/banner.jpg" alt="banner">
+				<div class="first-block__slide-content">
+					<b class="first-block__slide-caption">
+						Футболки<br>
+						к новому году</b>
+					<span class="first-block__slide-text">только 100 штук!</span>
+				</div>
+			</div>
+			<div class="first-block__item-slide">
+				<img src="./img/banner.jpg" alt="banner">
+				<div class="first-block__slide-content">
+					<b class="first-block__slide-caption">
+						Приколки<br>
+						к новому году</b>
+					<span class="first-block__slide-text">только 100 штук!</span>
+				</div>
+			</div>
+			<div class="first-block__item-slide">
+				<img src="./img/banner.jpg" alt="banner">
+				<div class="first-block__slide-content">
+					<b class="first-block__slide-caption">
+						Футболки<br>
+						к новому году</b>
+					<span class="first-block__slide-text">только 26 штук!</span>
+				</div>
+			</div>
+			<div class="first-block__item-slide">
+				<img src="./img/banner.jpg" alt="banner">
+				<div class="first-block__slide-content">
+					<b class="first-block__slide-caption">
+						Футболки<br>
+						к новому году</b>
+					<span class="first-block__slide-text">только 64 штук!</span>
+				</div>
+			</div>
+			<div class="first-block__item-slide">
+				<img src="./img/banner.jpg" alt="banner">
+				<div class="first-block__slide-content">
+					<b class="first-block__slide-caption">
+						Футболки<br>
+						к новому году</b>
+					<span class="first-block__slide-text">только 32 штук!</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="page-main__header-container">
+		<h2 class="page-main__header marquee" data-duration='5000' data-gap='30' data-duplicated='true'>Категории Категории Категории</h2>
+	</div>
+
+	<div class="page-main__container">
+		<div class="products-block">
+			<div class="products-block__item-container">
+				<a class="products-block__item" href="#">
+					<h3 class="products-block__header">футболки</h3>
+					<div class="products-block__img-container">
+						<img class="products-block__img" src="./img/product-01.png" alt="product-img">
+					</div>
+				</a>
+			</div>
+			<div class="products-block__item-container">
+				<a class="products-block__item" href="#">
+					<h3 class="products-block__header">худи</h3>
+					<div class="products-block__img-container">
+						<img class="products-block__img" src="./img/product-02.png" alt="product-img">
+					</div>
+				</a>
+			</div>
+			<div class="products-block__item-container">
+				<a class="products-block__item" href="#">
+					<h3 class="products-block__header">кроссовки</h3>
+					<div class="products-block__img-container">
+						<img class="products-block__img" src="./img/product-03.png" alt="product-img">
+					</div>
+				</a>
+			</div>
+			<div class="products-block__item-container">
+				<a class="products-block__item" href="#">
+					<h3 class="products-block__header">стикеры</h3>
+					<div class="products-block__img-container">
+						<img class="products-block__img" src="./img/product-04.png" alt="product-img">
+					</div>
+				</a>
+			</div>
+			<div class="products-block__item-container">
+				<a class="products-block__item" href="#">
+					<h3 class="products-block__header">кепки</h3>
+					<div class="products-block__img-container">
+						<img class="products-block__img" src="./img/product-05.png" alt="product-img">
+					</div>
+				</a>
+			</div>
+			<div class="products-block__item-container">
+				<a class="products-block__item" href="#">
+					<h3 class="products-block__header">чашки</h3>
+					<div class="products-block__img-container">
+						<img class="products-block__img" src="./img/product-06.png" alt="product-img">
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<div class="video-block">
+			<div class="video-block__top-container">
+				<h2 class="video-block__header">новые выпуски на канале</h2>
+				<a class="video-block__link" href="#">
+					показать все
+					<span>
+						<i class="icon-arrow"></i> <i class="icon-arrow"></i>
+					</span>
+				</a>
+			</div>
+
+			<div class="container-fluid">
+				<div class="row">
+					<a class="page-videos__item col-xs-12 col-sm-6 col-md-4 col-lg-3" href="#">
+						<div class="page-videos__item-wrapper">
+							<div class="video-block__item-img-container">
+								<img class="video-block__item-img" src="./img/video-01.jpg" alt="video-img" width="225" height="142">
+							</div>
+							<h5 class="video-block__item-header">Ограничивающие убеждения о продажах</h5>
+							<span class="video-block__item-text">
+								12 тыс. просмотров<br>
+								3 дня назад
+							</span>
+						</div>
+					</a>
+					<a class="page-videos__item col-xs-12 col-sm-6 col-md-4 col-lg-3" href="#">
+						<div class="page-videos__item-wrapper">
+							<div class="video-block__item-img-container">
+								<img class="video-block__item-img" src="./img/video-01.jpg" alt="video-img" width="225" height="142">
+							</div>
+							<h5 class="video-block__item-header">Зависимости, какие они бывают и что с ними делать</h5>
+							<span class="video-block__item-text">
+								12 тыс. просмотров<br>
+								3 дня назад
+							</span>
+						</div>
+					</a>
+					<a class="page-videos__item col-xs-12 col-sm-6 col-md-4 col-lg-3" href="#">
+						<div class="page-videos__item-wrapper">
+							<div class="video-block__item-img-container">
+								<img class="video-block__item-img" src="./img/video-01.jpg" alt="video-img" width="225" height="142">
+							</div>
+							<h5 class="video-block__item-header">Отвечаю на ваши вопросы</h5>
+							<span class="video-block__item-text">
+								12 тыс. просмотров<br>
+								3 дня назад
+							</span>
+						</div>
+					</a>
+					<a class="page-videos__item col-xs-12 col-sm-6 col-md-4 col-lg-3" href="#">
+						<div class="page-videos__item-wrapper">
+							<div class="video-block__item-img-container">
+								<img class="video-block__item-img" src="./img/video-01.jpg" alt="video-img" width="225" height="142">
+							</div>
+							<h5 class="video-block__item-header">Ограничивающие убеждения о продажах</h5>
+							<span class="video-block__item-text">
+								12 тыс. просмотров<br>
+								3 дня назад
+							</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+@@include('template/page-footer.html', {
+"footer_index": "true"
+})
+
+@@include('template/popups.html')
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/plugins.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+</html>

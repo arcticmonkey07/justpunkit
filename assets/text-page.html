@@ -1,0 +1,101 @@
+@@include('template/head.html', {
+"pagetitle": "Текстовая страница",
+"bodyclass": ""
+})
+
+<div class="page-header--shift">
+  @@include('template/page-header.html',{
+  "page_header_index": "false",
+  "page_header_logo_white": "false"
+  })
+</div>
+
+<main class="page-text">
+  <div class="intro-block intro-block--small">
+    <form class="page-main__search-input-container">
+      <input class="page-main__search-input" type="text" placeholder="Я ищу" autofocus>
+      <button class="page-main__search-input-close icon-close"></button>
+    </form>
+  </div>
+
+  <div class="page-text__container">
+    <img class="page-text__img" src="./img/text-page-img.jpg" alt="text-img">
+    <div class="page-text__content-container">
+      <div class="page-text__content">
+        <span class="page-text__subtext">3 дня назад</span>
+        <h1 class="page-text__header">10 курсов, которые я пройду в 2020 году</h1>
+        <p class="page-text__text">Медленно, без резких движений направляемся в сторону привычного режима и стараемся нагружать себя не всем и сразу, а дозированно. <a href="#">Вечерний ритуал</a>, который позволит перезагрузиться после слишком продуктивного рабочего дня, состоит из пяти пунктов.</p>
+        <ul class="page-text__text-list">
+          <li class="page-text__list-item">
+            <span class="page-text__list-number">1.</span>
+            <h4 class="page-text__list-header">Заварите любимый чай без кофеина</h4>
+            <p class="page-text__text">Лучше всего — гречишный, от которого сейчас все в восторге, потому что в нем витамины A, группы B, медь, железо и куча полезных микроэлементов. Гречишный чай поддерживает иммунитет, нормализует количество глюкозы в крови и положительно влияет на нервную систему. В отличие от собратьев этот напиток не задерживает воду в организме, а даже способствует ее выведению.</p>
+          </li>
+          <li class="page-text__list-item">
+            <span class="page-text__list-number">2.</span>
+            <h4 class="page-text__list-header">Очистите пространство палочкой пало санто или раскурите благовония</h4>
+            <p class="page-text__text">Пало санто — дерево, растущее в Южной Америке, в переводе с испанского — «святое дерево». И у благовоний, и у пало санто одна и та же роль: дым от тлеющей палочки способен гармонизировать внутреннее состояние. Даже если вы в это не верите, отнеситесь к такой части ритуала как к ароматерапии. Сосредоточьтесь на процессе и отпустите все плохие мысли.</p>
+          </li>
+        </ul>
+        <img class="page-text__img-02" src="./img/text-page-img-02.jpg" alt="img-text">
+        <p class="page-text__text">Примите расслабляющую теплую ванну с эфирным маслом, бомбочкой (лучше найти натуральную), солью или сухим молочком. Один из моих фаворитов — мятное молочко для ванны от российского бренда Laboratorium. Оно смягчает воду (в условиях мегаполисов лучше не принимать ванну без подобного средства, из-за низкого качества воды кожа может начать сохнуть), очень приятно пахнет и состоит исключительно из натуральных компонентов.</p>
+        <div class="page-text__quote">
+          <div class="page-text__quote-left">
+            <b class="page-text__quote-name">Елизавета<br>Ласкина</b>
+            <span class="page-text__quote-subtext">комьюнити-менеджер</span>
+          </div>
+          <div class="page-text__quote-right">
+            <p class="page-text__quote-text">Моя самая удачная покупка на распродаже — зимняя парка Acne Studios. Я до сих пор не верю, что мне так повезло, и жалею, что зима в этом году выдалась особенно тёплой. Всё никак в ней не пощеголяю!”</p>
+          </div>
+        </div>
+        <ul class="page-text__categories">
+          <li>
+            <a class="page-text__categories-link" href="#">сознание</a>
+          </li>
+          <li>
+            <a class="page-text__categories-link" href="#">медитация</a>
+          </li>
+          <li>
+            <a class="page-text__categories-link" href="#">книги</a>
+          </li>
+          <li>
+            <a class="page-text__categories-link" href="#">развитие</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-text__social-container">
+        <ul class="page-text__social">
+          <li class="page-text__social-item">
+            <a class="page-text__social-link" href="#">
+              <i class="icon-youtube-text-page"></i>
+            </a>
+          </li>
+          <li class="page-text__social-item">
+            <a class="page-text__social-link" href="#">
+              <i class="instagram-text-page"></i>
+            </a>
+          </li>
+          <li class="page-text__social-item">
+            <a class="page-text__social-link" href="#">
+              <i class="icon-fb-text-page"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+@@include('template/page-footer.html', {
+"footer_index": "false"
+})
+
+@@include('template/popups.html')
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/plugins.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+</html>

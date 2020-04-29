@@ -1,0 +1,133 @@
+@@include('template/head.html', {
+  "pagetitle": "Корзина",
+  "bodyclass": ""
+})
+
+<div class="page-header--shift">
+  @@include('template/page-header.html',{
+  "page_header_index": "false",
+  "page_header_logo_white": "false"
+  })
+</div>
+
+<main class="page-cart">
+  <div class="intro-block intro-block--small">
+    <h2 class="page-main__header page-main__header--other-pages marquee active" data-duration='5000' data-gap='30' data-duplicated='true'>Корзина Корзина Корзина</h2>
+    <form class="page-main__search-input-container">
+      <input class="page-main__search-input" type="text" placeholder="Я ищу" autofocus>
+      <button class="page-main__search-input-close icon-close"></button>
+    </form>
+  </div>
+
+  <form class="page-cart__container">
+    <div class="page-cart__content">
+      <h2 class="page-cart__header">Товары в корзине</h2>
+      <div class="page-cart__item">
+        <button class="page-cart__close"><i class="icon-close"></i></button>
+        <div class="page-cart__img-container">
+          <img class="page-cart__img" src="./img/cart-img.png" alt="cart-img">
+        </div>
+        <div class="page-cart__item-content">
+          <h4 class="page-cart__item-header">лонгслив just punk it к новому году</h4>
+          <div class="page-cart__price-container">
+            <span class="page-cart__price">900 грн</span>
+            <span class="page-cart__price-crossed">1000 грн</span>
+          </div>
+          <div class="page-cart__table">
+            <div class="page-cart__tr">
+              <div class="page-cart__td page-cart__td-header">размер</div>
+              <div class="page-cart__td page-cart__td-text">S</div>
+            </div>
+            <div class="page-cart__tr">
+              <div class="page-cart__td page-cart__td-header">Цвет</div>
+              <div class="page-cart__td">
+                <span class="page-cart__td-color"></span>
+                <p>голубой</p>
+              </div>
+            </div>
+            <div class="page-cart__tr">
+              <div class="page-cart__td page-cart__td-header">Количество</div>
+              <div class="page-cart__td page-cart__amount">
+                <a href="javascript:;" data-count-button class="page-cart__amount-btn quant-button minus disabled">-</a>
+                <input type="text" inputmode="decimal" pattern="[0-9]*" min="1" max="99" value="1" class="page-cart__amount-number text-input num-input only-digits" readonly>
+                <a href="javascript:;" data-count-button class="page-cart__amount-btn quant-button plus">+</a>
+              </div>
+            </div>
+          </div>
+          <span class="page-cart__price-bottom">900 грн</span>
+        </div>
+      </div>
+      <div class="page-cart__item">
+        <button class="page-cart__close"><i class="icon-close"></i></button>
+        <div class="page-cart__img-container">
+          <img class="page-cart__img" src="./img/cart-img.png" alt="cart-img">
+        </div>
+        <div class="page-cart__item-content">
+          <h4 class="page-cart__item-header">лонгслив just punk it к новому году</h4>
+          <div class="page-cart__price-container">
+            <span class="page-cart__price">900 грн</span>
+            <span class="page-cart__price-crossed">1000 грн</span>
+          </div>
+          <div class="page-cart__table">
+            <div class="page-cart__tr">
+              <div class="page-cart__td page-cart__td-header">размер</div>
+              <div class="page-cart__td page-cart__td-text">S</div>
+            </div>
+            <div class="page-cart__tr">
+              <div class="page-cart__td page-cart__td-header">Цвет</div>
+              <div class="page-cart__td">
+                <span class="page-cart__td-color"></span>
+                <p>голубой</p>
+              </div>
+            </div>
+            <div class="page-cart__tr">
+              <div class="page-cart__td page-cart__td-header">Количество</div>
+              <div class="page-cart__td page-cart__amount">
+                <a href="javascript:;" data-count-button class="page-cart__amount-btn quant-button minus disabled">-</a>
+                <input type="text" inputmode="decimal" pattern="[0-9]*" min="1" max="99" value="1" class="page-cart__amount-number text-input num-input only-digits" readonly>
+                <a href="javascript:;" data-count-button class="page-cart__amount-btn quant-button plus">+</a>
+              </div>
+            </div>
+          </div>
+          <span class="page-cart__price-bottom">900 грн</span>
+        </div>
+      </div>
+      <button class="page-cart__btn-submit page-cart__btn-submit--items" type="submit">оформить заказ</button>
+    </div>
+
+
+    <div class="page-cart__sidebar">
+      <h3 class="page-cart__sidebar-header">итого</h3>
+      <span class="page-cart__sidebar-text">у вас есть промокод?</span>
+      <div class="page-cart__sidebar-promo">
+        <input class="page-cart__sidebar-input" type="text" placeholder="промокод на скидку">
+        <button class="page-cart__sidebar-btn-add-promo">добавить</button>
+      </div>
+      <div class="page-cart__sidebar-table">
+        <div class="page-cart__sidebar-tr">
+          <div class="page-cart__sidebar-td left">Количество товаров</div>
+          <div class="page-cart__sidebar-td right">2</div>
+        </div>
+        <div class="page-cart__sidebar-tr">
+          <div class="page-cart__sidebar-td left">сумма</div>
+          <div class="page-cart__sidebar-td right bold">1800 грн</div>
+        </div>
+      </div>
+      <button class="page-cart__btn-submit" type="submit">оформить заказ</button>
+      <span class="page-cart__sidebar-subtext">Стоимость заказа указана без учета доставки</span>
+    </div>
+  </form>
+</main>
+
+@@include('template/page-footer.html', {
+  "footer_index": "false"
+})
+
+@@include('template/popups.html')
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/plugins.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+
+// GLOBAL STYLES
+@import "global/custom-variables";
+
+@import "global/functions";
+@import "global/bootstrap-variables";
+@import "global/mixins";
+@import "global/reboot";
+@import "global/type";
+@import "global/grid";
+@import "global/forms";
+@import "global/buttons";
+@import "global/utilities";
+@import "global/fonts";
+
+// PLUGINS STYLE
+@import "plugins/icons";
+@import "plugins/slick";
+@import "plugins/slick-theme";
+
+// BLOCKS STYLE
+@import "blocks/popup-block";
+@import "blocks/page-header";
+@import "blocks/page-main";
+@import "blocks/first-block";
+@import "blocks/products-block";
+@import "blocks/video-block";
+@import "blocks/intro-block";
+@import "blocks/page-catalog";
+@import "blocks/page-card";
+@import "blocks/page-cart";
+@import "blocks/page-checkout";
+@import "blocks/page-404";
+@import "blocks/page-text";
+@import "blocks/page-recommend";
+@import "blocks/page-videos";
+
+@import "blocks/page-footer";
+
+// popups
+@import "blocks/popup-in-cart";
+
+body {
+	position: relative;
+	background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+	font-family: $font-family;
+	color: #000000;
+	font-weight: normal;
+	line-height: 1.2;
+	font-size: 16px;
+	min-width: 320px;
+}
+
+//main {
+//  padding-top: 91px;
+//}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+img {
+  display: block;
+  height: auto;
+}
