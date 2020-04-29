@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<!-- ADAPTIVITY -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#0099EF">
+	
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#0099EF">
+	
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<meta name="apple-touch-fullscreen" content="yes">
+	
+	<!-- CONFIG -->
+	<meta name="format-detection" content="telephone=no">
+	<title>Страница товара - Название проекта</title>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+<body >
+
+<div class="page-header--shift">
+  
+
+<header class="page-header">
+
+  <div class="page-header__top">
+    <a class="page-header__logo" href="index.html">
+      
+      
+      <img class="page-header__logo" src="../img/logo-header-yellow.svg" alt="header-logo">
+      
+    </a>
+    <nav class="page-header__nav">
+      <ul class="page-header__list">
+        <li class="page-header__item">
+          <a class="page-header__link" href="#">магазин</a>
+        </li>
+        <li class="page-header__item">
+          <a class="page-header__link" href="#">обо мне</a>
+        </li>
+        <li class="page-header__item">
+          <a class="page-header__link" href="#">мои рекомендации</a>
+        </li>
+        <li class="page-header__item">
+          <a class="page-header__link" href="#">выпуски</a>
+        </li>
+        <li class="page-header__item">
+          <a class="page-header__link" href="#">контакты</a>
+        </li>
+        <li class="page-header__item">
+          <a class="page-header__link" href="#">доставка</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="page-header__right">
+      <a class="page-header__search" href="#">
+        <i class="icon-search"></i>
+      </a>
+      <a class="page-header__cart" href="cart.html">
+        <i class="icon-cart"></i>
+        <span class="page-header__cart-count">1</span>
+        <span class="page-header__cart-count-inner">1</span>
+      </a>
+    </div>
+    <button class="page-header__menu-toggle" type="button" title="Открыть меню">
+      <span></span>
+    </button>
+  </div>
+</header>
+
+
+
+
+
+
+</div>
+
+<main class="page-checkout">
+  <div class="intro-block intro-block--small">
+    <h2 class="page-main__header page-main__header--other-pages marquee active" data-duration='5000' data-gap='30' data-duplicated='true'>Корзина Корзина Корзина</h2>
+    <form class="page-main__search-input-container">
+      <input class="page-main__search-input" type="text" placeholder="Я ищу" autofocus>
+      <button class="page-main__search-input-close icon-close"></button>
+    </form>
+  </div>
+
+  <form class="page-checkout__container form-validate" action="">
+    <div class="page-checkout__content">
+      <h2 class="page-checkout__header">Оформление заказа</h2>
+      <h3 class="page-checkout__form-header">личные данные</h3>
+      <div class="page-checkout__form-blocks-container">
+        <div class="page-checkout__form-block">
+          <div class="page-checkout__input-wrapper">
+            <input class="page-checkout__input" type="text" name="name" required>
+            <label class="page-checkout__label">имя</label>
+          </div>
+          <div class="page-checkout__input-wrapper">
+            <input class="page-checkout__input" type="text" name="lastName" required>
+            <label class="page-checkout__label">фамилия</label>
+          </div>
+        </div>
+        <div class="page-checkout__form-block">
+          <div class="page-checkout__input-wrapper">
+            <input class="page-checkout__input" type="email" name="email" required>
+            <label class="page-checkout__label">электронная почта</label>
+          </div>
+          <div class="page-checkout__input-wrapper">
+            <input class="page-checkout__input" type="text" name="tel" required>
+            <label class="page-checkout__label">телефон</label>
+          </div>
+        </div>
+      </div>
+      <h3 class="page-checkout__form-header">выбор доставки</h3>
+      <div class="page-checkout__shipping">
+        <button class="page-checkout__btn-country active" type="button">украина</button>
+        <button class="page-checkout__btn-country" type="button">другая страна</button>
+      </div>
+      <div class="page-checkout__country page-checkout__ukraine active">
+        <h3 class="page-checkout__form-header">способ доставки</h3>
+        <div class="page-checkout__checkbox-container">
+          <input class="page-checkout__checkbox visually-hidden" id="checkbox-mail" type="radio" name="radio-shipping" checked>
+          <span class="page-checkout__checkbox-indicator"></span>
+          <label for="checkbox-mail" class="page-checkout__checkbox-label page-checkout__radio-new-post active">новая почта (35 грн)</label>
+        </div>
+        <div class="page-checkout__input-wrapper page-checkout__input-new-post active width-100 mb-4">
+          <input class="page-checkout__input page-checkout__input" type="text" name="address" required>
+          <label class="page-checkout__label" id="label-address">город и отделение новой почты</label>
+        </div>
+        <div class="page-checkout__checkbox-container">
+          <input class="page-checkout__checkbox visually-hidden" id="checkbox-courier" type="radio" name="radio-shipping">
+          <span class="page-checkout__checkbox-indicator"></span>
+          <label for="checkbox-courier" class="page-checkout__checkbox-label page-checkout__radio-courier">курьер по городу (80 грн)</label>
+        </div>
+        <div class="page-checkout__input-wrapper page-checkout__input-courier width-100 mb-4">
+          <input class="page-checkout__input page-checkout__input" type="text" name="address" required>
+          <label class="page-checkout__label" id="label-courier">введите адрес</label>
+        </div>
+      </div>
+      <div class="page-checkout__country page-checkout__other">
+        <div class="page-checkout__form-blocks-container">
+          <div class="page-checkout__form-block">
+            <div class="page-checkout__input-wrapper">
+              <input class="page-checkout__input" type="text" name="country" required>
+              <label class="page-checkout__label">страна</label>
+            </div>
+            <div class="page-checkout__input-wrapper">
+              <input class="page-checkout__input" type="text" name="city" required>
+              <label class="page-checkout__label">город</label>
+            </div>
+          </div>
+          <div class="page-checkout__form-block">
+            <div class="page-checkout__input-wrapper">
+              <input class="page-checkout__input" type="text" name="street" required>
+              <label class="page-checkout__label">улица</label>
+            </div>
+            <div class="page-checkout__input-wrapper">
+              <input class="page-checkout__input" type="text" name="index" required>
+              <label class="page-checkout__label">индекс</label>
+            </div>
+          </div>
+          <div class="page-checkout__form-block">
+            <div class="page-checkout__input-wrapper width-25">
+              <input class="page-checkout__input" type="text" name="house" required>
+              <label class="page-checkout__label">дом</label>
+            </div>
+            <div class="page-checkout__input-wrapper width-25">
+              <input class="page-checkout__input" type="text" name="room" required>
+              <label class="page-checkout__label">кв. офис</label>
+            </div>
+            <div class="page-checkout__input-wrapper width-25">
+              <input class="page-checkout__input" type="text" name="housing" required>
+              <label class="page-checkout__label">корпус</label>
+            </div>
+            <div class="page-checkout__input-wrapper width-25">
+              <input class="page-checkout__input" type="text" name="building" required>
+              <label class="page-checkout__label">здание</label>
+            </div>
+          </div>
+        </div>
+        <h3 class="page-checkout__form-header">способ доставки</h3>
+        <div class="page-checkout__checkbox-container">
+          <input class="page-checkout__checkbox visually-hidden" id="meest-express" type="radio" name="radio-ship">
+          <span class="page-checkout__checkbox-indicator"></span>
+          <label for="meest-express" class="page-checkout__checkbox-label">meest express (35 грн)</label>
+        </div>
+        <div class="page-checkout__checkbox-container mb-5">
+          <input class="page-checkout__checkbox visually-hidden" id="city-express" type="radio" name="radio-ship">
+          <span class="page-checkout__checkbox-indicator"></span>
+          <label for="city-express" class="page-checkout__checkbox-label">city express (80 грн)</label>
+        </div>
+      </div>
+      <h3 class="page-checkout__form-header mb-4">способ оплаты</h3>
+      <p class="page-checkout__text">Перевод банковской картой</p>
+      <ul class="page-checkout__pay">
+        <li class="page-checkout__pay-item">
+          <span class="page-checkout__pay-link visa"></span>
+        </li>
+        <li class="page-checkout__pay-item">
+          <span class="page-checkout__pay-link master"></span>
+        </li>
+        <li class="page-checkout__pay-item">
+          <span class="page-checkout__pay-link apple"></span>
+        </li>
+      </ul>
+      <button class="page-cart__btn-submit width" type="submit">оформить заказ</button>
+    </div>
+
+
+    <div class="page-checkout__sidebar">
+      <h3 class="page-cart__sidebar-header">корзина</h3>
+      <div class="page-cart__sidebar-table">
+        <div class="page-cart__sidebar-tr">
+          <div class="page-cart__sidebar-td left">Количество товаров</div>
+          <div class="page-cart__sidebar-td right">2</div>
+        </div>
+        <div class="page-cart__sidebar-tr">
+          <div class="page-cart__sidebar-td left">сумма</div>
+          <div class="page-cart__sidebar-td right bold">1800 грн</div>
+        </div>
+      </div>
+    </div>
+  </form>
+</main>
+
+
+
+<footer class="page-footer">
+  
+  <div class="page-footer__content">
+    <div class="page-footer__logo-link">
+      <i class="icon-logo"></i>
+    </div>
+    <div class="page-footer__social">
+      <a class="page-footer__social-link youtube" href="#"></a>
+      <a class="page-footer__social-link inst" href="#"></a>
+      <a class="page-footer__social-link fb" href="#"></a>
+    </div>
+    <a class="page-footer__company" href="#">сделано в <span>LYSHAK STUDIO</span></a>
+  </div>
+</footer>
+
+
+
+<div class="popup-block popup-in-cart" id="popup-id">
+	<div class="popup-block__overlay">
+		<div class="popup-block__popup">
+			<div class="inner-content">
+				<a href="javascript:;" data-toggle="modal-dismiss" class="popup-block__close"></a>
+
+				<img class="popup-in-cart__smile" src="../img/partying-face.svg" alt="smile">
+				<h3 class="popup-in-cart__header">товар в корзине!</h3>
+				<button class="popup-in-cart__button">отлично, спс</button>
+				<a class="popup-in-cart__link" href="../cart.html">перейти в корзину
+					<span>
+						<i class="icon-arrow"></i>
+						<i class="icon-arrow"></i>
+					</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/plugins.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+</html>
