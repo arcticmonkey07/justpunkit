@@ -13,7 +13,7 @@
     "url": "git://github.com/PeterLyshak/StartScssGulp.git"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.27.10",
     "gh-pages": "^2.2.0",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
